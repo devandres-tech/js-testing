@@ -13,7 +13,8 @@ beforeEach(() => {
   user = new User(testEmail)
 })
 
-it('should update the email', () => {
+// speeds up testing
+it.concurrent('should update the email', () => {
   const newTestEmail = 'test2@test.com'
 
   user.updateEmail(newTestEmail)
