@@ -7,6 +7,7 @@ describe('generateReportData()', () => {
     const logger = vi.fn()
     generateReportData(logger)
 
+    // expect(logger).toBeCalledTimes(4)
     expect(logger).toBeCalled()
   })
 })
